@@ -1,0 +1,82 @@
+:root {
+    --light-green: #b5e5c8;
+    --dark-green: #0fa174;
+    --white: #f7f8f8;
+    --black: #202123;
+    --gray: #282b30;
+    --bg-light: #ebf3ee;
+    --bg-dark: var(--black);
+}
+
+:root .theme-dark {
+    --text: var(--light-green);
+    --button-bg: var(--dark-green);
+    --button-text: var(--white);
+    --bg: var(--bg-dark);
+}
+
+:root .theme-light {
+    --text: var(--gray);
+    --button-bg: var(--light-green);
+    --button-text: var(--dark-green);
+    --bg: var(--bg-light);
+}
+
+:root .theme-light .file-menu a:hover {
+    text-shadow: 0 0 5px var(--dark-green);
+}
+
+button {
+    border-radius: 3px;
+    border: 1px solid var(--dark-green);
+}
+
+:root .theme-dark a, 
+:root .theme-light a {
+    color: var(--button-text);
+}
+
+:root .toggled {
+    text-shadow: 0 0 3px var(--dark-green);
+}
+
+:root .theme-light .toggled {
+    color: var(--gray);
+}
+
+:root .theme-dark span.link-wrapper a {
+    color: var(--text);
+}
+
+#menu-bar > * {
+    margin: 0.15em;
+}
+
+:root .theme-light ul.dir li:nth-of-type(2n+1) {
+    background-color: var(--light-green);
+}
+
+:root .theme-light ul.dir li:nth-of-type(2n+1) .popup-menu-button {
+    background-color: var(--bg-light);
+}
+
+.breadcrumb {
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+:root .theme-light .breadcrumb {
+    border: 1px solid var(--dark-green);
+}
+
+#files-dropper {
+    background-color: var(--bg);
+}
+
+#menu-panel {
+    margin-bottom: 5px;
+}
+
+ul.dir li {
+    padding: 11px;
+}
