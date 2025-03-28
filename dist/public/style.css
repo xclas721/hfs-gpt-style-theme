@@ -15,28 +15,24 @@
     --bg: var(--bg-dark);
 }
 
-/* :root .theme-light {
-    --text: var(--gray);
-    --button-bg: var(--light-green);
-    --button-text: var(--dark-green);
-    --bg: var(--bg-light);
-} */
+:root .theme-light {
+    --text: var(--light-green); /* Match text color to light-green */
+    --button-bg: var(--dark-green); /* Match button background to dark-green */
+    --button-text: var(--white); /* Match button text to white */
+    --bg: var(--bg-dark); /* Dark background for light theme */
+}
 
-/* :root .theme-light .file-menu a:hover {
+:root .theme-light .file-menu a:hover {
     text-shadow: 0 0 5px var(--dark-green);
-} */
+}
 
 button {
     border-radius: 3px;
     border: 1px solid var(--dark-green);
 }
 
-/* :root .theme-dark a, 
+:root .theme-dark a, 
 :root .theme-light a {
-    color: var(--button-text);
-} */
-
-:root .theme-dark a {
     color: var(--button-text);
 }
 
@@ -44,9 +40,9 @@ button {
     text-shadow: 0 0 3px var(--dark-green);
 }
 
-/* :root .theme-light .toggled {
-    color: var(--gray);
-} */
+:root .theme-light .toggled {
+    color: var(--light-green); /* Change color to light-green for toggled state */
+}
 
 :root .theme-dark span.link-wrapper a {
     color: var(--text);
@@ -56,22 +52,22 @@ button {
     margin: 0.15em;
 }
 
-/* :root .theme-light ul.dir li:nth-of-type(2n+1) {
-    background-color: var(--light-green);
+:root .theme-light ul.dir li:nth-of-type(2n+1) {
+    background-color: var(--dark-green); /* Match background color to dark-green */
 }
 
 :root .theme-light ul.dir li:nth-of-type(2n+1) .popup-menu-button {
-    background-color: var(--bg-light);
-} */
+    background-color: var(--bg-dark); /* Match button background to dark background */
+}
 
 .breadcrumb {
     border-radius: 4px;
     margin-right: 5px;
 }
 
-/* :root .theme-light .breadcrumb {
+:root .theme-light .breadcrumb {
     border: 1px solid var(--dark-green);
-} */
+}
 
 #files-dropper {
     background-color: var(--bg);
