@@ -16,10 +16,10 @@
 }
 
 :root .theme-light {
-    --text: var(--light-green); /* Match text color to light-green */
-    --button-bg: var(--dark-green); /* Match button background to dark-green */
-    --button-text: var(--white); /* Match button text to white */
-    --bg: var(--bg-dark); /* Dark background for light theme */
+    --text: var(--gray);
+    --button-bg: var(--light-green);
+    --button-text: var(--dark-green);
+    --bg: var(--bg-light);
 }
 
 :root .theme-light .file-menu a:hover {
@@ -41,7 +41,7 @@ button {
 }
 
 :root .theme-light .toggled {
-    color: var(--light-green); /* Change color to light-green for toggled state */
+    color: var(--gray);
 }
 
 :root .theme-dark span.link-wrapper a {
@@ -53,11 +53,11 @@ button {
 }
 
 :root .theme-light ul.dir li:nth-of-type(2n+1) {
-    background-color: var(--dark-green); /* Match background color to dark-green */
+    background-color: var(--light-green);
 }
 
 :root .theme-light ul.dir li:nth-of-type(2n+1) .popup-menu-button {
-    background-color: var(--bg-dark); /* Match button background to dark background */
+    background-color: var(--bg-light);
 }
 
 .breadcrumb {
